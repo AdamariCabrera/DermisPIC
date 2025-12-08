@@ -49,6 +49,38 @@ button:active{
     transform: scale(0.95);
 }
 
+@media (max-width: 1024px) {
+    button {
+        padding: 80px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 60px 60px;
+        font-size: 16px;
+    }
+    
+    .row {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 40px 40px;
+        font-size: 14px;
+    }
+    
+    .row {
+        gap: 10px;
+    }
+    
+    .container {
+        gap: 20px;
+    }
+}
+
 .col1{
     font-family: 'Barrio', cursive;
     font-size: 25px;
@@ -88,3 +120,5 @@ canvas {
     z-index: -1 !important;
     pointer-events: none !important;
 }
+
+
