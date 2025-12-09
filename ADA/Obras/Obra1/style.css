@@ -79,3 +79,50 @@ canvas {
     background-color: rgb(154, 97, 70);
     transform: scale(1.05);
 }
+
+/* ...existing code... */
+
+.panel {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(208, 134, 112, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    font-family: 'Barriecito', cursive;
+    text-align: center;
+    max-width: 80%;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Panel oculto */
+.panel.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Botón para mostrar/ocultar */
+.toggle-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    padding: 10px 15px;
+    background-color: rgba(201, 141, 107, 0.5);
+    color: rgba(255,255,255,0.5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Barrio', cursive;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-panel:hover {
+    background-color: rgb(154, 97, 70);
+}
+
